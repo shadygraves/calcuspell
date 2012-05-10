@@ -31,13 +31,13 @@ class Worker
 				# puts "thread " + Paint[thread_id, '#ffaa00'] + "\t| permutation #{i}\t| word #{words_array.length}\t | " + Paint["#{tmp_word}", :red] + "\n"
 			end
 		end
-
+		puts Paint["Thread #{thread_id} exiting!", :red, :bright]
 		words_array
 	end
 end
 
 MAX_WORD_SIZE = 8
-THREADS 	  = 9
+THREADS 	  = 4
 
 
 
